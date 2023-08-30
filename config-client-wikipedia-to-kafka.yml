@@ -16,7 +16,7 @@ kafka-config.wikipedia:
   topic-name: wikipedia.pages
   topic-names-to-create:
     - wikipedia.pages
-  num-of-partitions: 3
+  number-of-partitions: 3
   replication-factor: 3
   
 kafka-producer-config.wikipedia:
