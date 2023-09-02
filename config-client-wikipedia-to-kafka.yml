@@ -10,9 +10,9 @@ wikipedia-config:
   wikipedia-featured-feed-url: https://en.wikipedia.org/api/rest_v1/feed/featured
   
 kafka-config.wikipedia:
-  bootstrap-servers: localhost:29092, localhost:29093, localhost:29094
+  bootstrap-servers: kafka1:29092, kafka2:29093, kafka3:29094
   schema-registry-url-key: schema.registry.url
-  schema-registry-url:  http://localhost:8081
+  schema-registry-url:  http://kafka-schema-registry:8081
   topic-name: wikipedia.pages
   topic-names-to-create:
     - wikipedia.pages
