@@ -37,4 +37,8 @@ retry-config:
   sleep-time-ms: 2000
   
 solr:
-  wikipedia-core-name: wikipedia
+  wikipedia-collection-name: wikipedia
+  zookeeper-urls:
+    - "solr-zoo1:12181"
+    - "solr-zoo2:22181"
+    - "solr-zoo3:32181"

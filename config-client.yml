@@ -2,5 +2,3 @@ spring:
   cloud:
     allow-override: true
     override-none: true
-  main:
-    allow-bean-definition-overriding: true
