@@ -35,3 +35,6 @@ retry-config:
   multiplier: 2.0
   maxAttempts: 10
   sleep-time-ms: 2000
+  
+solr:
+  wikipedia-core-name: wikipedia
