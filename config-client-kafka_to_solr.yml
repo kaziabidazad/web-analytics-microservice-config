@@ -42,3 +42,7 @@ solr:
     - "solr-zoo1:12181"
     - "solr-zoo2:22181"
     - "solr-zoo3:32181"
+  solr-urls:
+    - "solr1:18983"
+    - "solr2:28983"
+    - "solr3:38983"
