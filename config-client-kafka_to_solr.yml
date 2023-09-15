@@ -43,6 +43,6 @@ solr:
     - "solr-zoo2:22181"
     - "solr-zoo3:32181"
   solr-urls:
-    - "solr1:18983"
-    - "solr2:28983"
-    - "solr3:38983"
+    - "http://solr1:18983/solr"
+    - "http://solr2:28983/solr"
+    - "http://solr3:38983/solr"
