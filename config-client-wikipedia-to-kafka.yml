@@ -9,7 +9,7 @@ wikipedia-config:
   wikipediadateformat: yyyy/MM/dd
   wikipedia-featured-feed-url: https://en.wikipedia.org/api/rest_v1/feed/featured
   wikipedia-page-html-api:
-    base-url:  https://en.wikipedia.org/api/rest_v1/page/html/Pel%C3%A9?redirect=false
+    base-url:  https://en.wikipedia.org/api/rest_v1/page/html
     url-params:
       - name: redirect
         value: false
