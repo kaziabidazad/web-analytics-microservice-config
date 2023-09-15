@@ -9,6 +9,8 @@ kafka-config.wikipedia:
   topic-name: wikipedia.pages
   topic-names-to-create:
     - wikipedia.pages
+  number-of-partitions: 3
+  replication-factor: 3
 
 kafka-consumer-solr-config:
   key-deserializer: org.apache.kafka.common.serialization.LongDeserializer
