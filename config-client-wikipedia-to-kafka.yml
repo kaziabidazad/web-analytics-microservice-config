@@ -29,8 +29,11 @@ kafka-producer-config.wikipedia:
   value-serializer-class: io.confluent.kafka.serializers.KafkaAvroSerializer
   compression-type: snappy
   acks: all
-  batch-size: 16384
+  # Batch size in bytes 41943040= 40MB
+  batch-size: 41943040
   batch-size-boost-factor: 100
+  # max request size in bytes 20971520= 20MB 
+  max-request-size: 20971520
   linger-ms: 5
   request-timeout-ms: 60000
   retry-count: 5
