@@ -31,7 +31,7 @@ kafka-producer-config.wikipedia:
   acks: all
   # Batch size in bytes 33554432= 32MB - This is hard limit from kafka
   # To overrise change broker settings : replica.fetch.max.bytes, message.max.bytes message.max.bytes
-  batch-size: 41943040
+  batch-size: 33554432
   batch-size-boost-factor: 100
   # max request size in bytes 15728640= 15MB 
   # To overrise change broker settings : replica.fetch.max.bytes, message.max.bytes message.max.bytes
