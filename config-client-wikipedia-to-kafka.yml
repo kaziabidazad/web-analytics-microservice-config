@@ -8,6 +8,7 @@ retry-config:
 wikipedia-config:
   wikipediadateformat: yyyy/MM/dd
   wikipedia-featured-feed-url: https://en.wikipedia.org/api/rest_v1/feed/featured
+  index-complete-page: false
   wikipedia-page-html-api:
     base-url:  https://en.wikipedia.org/api/rest_v1/page/html
     url-params:

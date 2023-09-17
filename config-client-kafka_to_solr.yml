@@ -40,6 +40,7 @@ retry-config:
   
 solr:
   wikipedia-collection-name: wikipedia
+  index-complete-page: false
   zookeeper-urls:
     - "solr-zoo1:12181"
     - "solr-zoo2:22181"
