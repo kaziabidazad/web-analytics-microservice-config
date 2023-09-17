@@ -30,6 +30,7 @@ kafka-consumer-solr-config:
   max-partition-fetch-bytes-default: 1048576
   max-partition-fetch-bytes-boost-factor: 1
   poll-timeout-ms: 150
+  internal-queue-max-size: 1000
 
 retry-config:
   initial-interval-ms: 3000
