@@ -1,0 +1,11 @@
+solr:
+  wikipedia-collection-name: wikipedia
+  index-complete-page: false
+  zookeeper-urls:
+    - "solr-zoo1:12181"
+    - "solr-zoo2:22181"
+    - "solr-zoo3:32181"
+  solr-urls:
+    - "http://solr1:8983/solr"
+    - "http://solr2:8983/solr"
+    - "http://solr3:8983/solr"
