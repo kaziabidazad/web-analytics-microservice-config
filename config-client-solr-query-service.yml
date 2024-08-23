@@ -1,2 +1,17 @@
 server:
     port: 8183
+    servlet:
+        context-path: /solr-query-service
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: "mappings"
+        
+solr-query-service:
+    query:
+        params:
+            query-param: "query"
+            page-number-param: "pageNumber"
+            items-per-page-param: "itemsPerPage"
