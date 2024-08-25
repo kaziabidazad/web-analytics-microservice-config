@@ -15,3 +15,8 @@ solr-query-service:
             query-param: "query"
             page-number-param: "pageNumber"
             items-per-page-param: "itemsPerPage"
+springdoc:
+    api-docs:
+        path: /api-docs
+    swagger-ui:
+        path: /swaggerui.html
