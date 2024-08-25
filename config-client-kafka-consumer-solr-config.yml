@@ -2,6 +2,9 @@ kafka-consumer-solr-config:
   key-deserializer: org.apache.kafka.common.serialization.LongDeserializer
   value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
   consumer-group-id: wikipediaPagesToSolrTopicListenerTest003
+# auto-offset-reset - when creating a new consumer-group, 
+# "earliest" will start reading from the beginning. 
+# "latest" - will start to read new messages only which is the default behaviour
   auto-offset-reset: earliest
   specific-avro-reader-key: specific.avro.reader
   specific-avro-reader: true
