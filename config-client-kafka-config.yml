@@ -3,7 +3,7 @@ server:
 
 
 kafka-config.wikipedia:
-  bootstrap-servers: kafka1:29092, kafka2:29093, kafka3:29094
+  bootstrap-servers: kafka1:19092, kafka2:19093, kafka3:19094
   schema-registry-url-key: schema.registry.url
   schema-registry-url:  http://kafka-schema-registry:8081
   topic-name: wikipedia.pages
@@ -11,30 +11,3 @@ kafka-config.wikipedia:
     - wikipedia.pages
   number-of-partitions: 3
   replication-factor: 3
-
-kafka-consumer-solr-config:
-  key-deserializer: org.apache.kafka.common.serialization.LongDeserializer
-  value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
-  consumer-group-id: wikipediaPagesToSolrTopicListenerTest002
-  auto-offset-reset: earliest
-  specific-avro-reader-key: specific.avro.reader
-  specific-avro-reader: true
-  batch-listener: true
-# @Listener will not automatically. We will start it programatically
-  auto-startup: false
-  concurrency: 3
-  session-timeout-ms: 10000
-  heartbeat-interval-ms: 3000
-  max-poll-interval-ms: 300000
-  max-poll-records: 500
-  max-partition-fetch-bytes-default: 1048576
-  max-partition-fetch-bytes-boost-factor: 1
-  poll-timeout-ms: 150
-  internal-queue-max-size: 1000
-
-retry-config:
-  initial-interval-ms: 3000
-  max-interval-ms: 100000
-  multiplier: 2.0
-  maxAttempts: 10
-  sleep-time-ms: 2000

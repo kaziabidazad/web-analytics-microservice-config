@@ -1,0 +1,16 @@
+kafka-producer-config.wikipedia:
+  key-serializer-class: org.apache.kafka.common.serialization.LongSerializer
+  value-serializer-class: io.confluent.kafka.serializers.KafkaAvroSerializer
+  compression-type: snappy
+  acks: all
+  # Batch size in bytes 20971520= 20MB
+  # To override change broker settings : replica.fetch.max.bytes, message.max.bytes
+  batch-size: 20971520
+  batch-size-boost-factor: 100
+  # max request size in bytes 5242880= 5MB 
+  # To overrise change broker settings : replica.fetch.max.bytes, message.max.bytes message.max.bytes
+  max-request-size: 5242880
+  linger-ms: 5
+  request-timeout-ms: 60000
+  retry-count: 5
+  start-date: 2024-08-24
