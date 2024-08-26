@@ -1,0 +1,24 @@
+server:
+    port: 8184
+    servlet:
+        context-path: /solr-web-client
+spring:
+    thymeleaf:
+        cache: false
+
+
+solr-query-web-client-service:
+    webclient:
+        connect-timeout-ms: 10000
+        read-timeout-ms: 10000
+        write-timeout-ms: 10000
+        max-in-memory-size: -1
+        content-type: 'application/json'
+        accept-type: 'application/json'
+        solr-server-base-url: 'http://solr-query-service:8183/solr-query-service/docs'
+
+user-config:
+    username: 'wams-user'
+    password: 'admin'
+    roles: USER
+    
