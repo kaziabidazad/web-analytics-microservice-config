@@ -21,6 +21,7 @@ springdoc:
         path: /api-docs
     swagger-ui:
         path: /swaggerui.html
+        operationsSorter: method
 
 retry-config:
     initial-interval-ms: 3000
