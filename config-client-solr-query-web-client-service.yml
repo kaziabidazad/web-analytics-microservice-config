@@ -18,7 +18,7 @@ solr-query-web-client-service:
         solr-server-base-url: 'http://solr-query-service:8183/solr-query-service/docs'
 
 user-config:
-    username: 'wams-user'
-    password: 'admin'
+    username: wams-user
+    password: admin
     roles: USER
     
