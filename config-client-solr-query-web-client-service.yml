@@ -20,6 +20,6 @@ solr-query-web-client-service:
         max-in-memory-size: -1
         content-type: 'application/json'
         accept-type: 'application/json'
-        solr-server-base-url: 'http://solr-query-service:8183/solr-query-service/docs'
+        solr-query-service-base-url: 'http://solr-query-service:8183/solr-query-service/docs'
 
     
