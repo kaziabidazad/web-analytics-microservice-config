@@ -5,6 +5,11 @@ server:
 spring:
     thymeleaf:
         cache: false
+    security:
+        user:
+            name: wams-user
+            password: admin
+            roles: USER
 
 
 solr-query-web-client-service:
@@ -17,10 +22,4 @@ solr-query-web-client-service:
         accept-type: 'application/json'
         solr-server-base-url: 'http://solr-query-service:8183/solr-query-service/docs'
 
-spring:
-    security:
-        user:
-            name: wams-user
-            password: admin
-            roles: USER
     
