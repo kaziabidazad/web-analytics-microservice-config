@@ -22,4 +22,12 @@ solr-query-web-client-service:
         accept-type: 'application/json'
         solr-query-service-base-url: 'http://solr-query-service:8183/solr-query-service/docs'
 
+solr-query-service:
+    query:
+        params:
+            query-param: "query"
+            page-number-param: "pageNumber"
+            items-per-page-param: "itemsPerPage"
+        
+
     
