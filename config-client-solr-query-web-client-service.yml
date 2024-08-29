@@ -29,15 +29,15 @@ solr-query-web-client-service:
         instances:
             -
                 id: solr-query-service-1
-                host: solr-query-service
+                host: solr-query-service-1
                 port: 8183
             -
                 id: solr-query-service-2
-                host: solr-query-service
+                host: solr-query-service-2
                 port: 8185
             -
                 id: solr-query-service-3
-                host: solr-query-service
+                host: solr-query-service-3
                 port: 8186
 
 solr-query-service:
