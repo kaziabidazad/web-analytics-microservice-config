@@ -21,6 +21,20 @@ solr-query-web-client-service:
         content-type: 'application/json'
         accept-type: 'application/json'
         solr-query-service-base-url: 'http://solr-query-service:8183/solr-query-service/docs'
+        service-id: solr-query-service
+        instances:
+            -
+                id: elastic-query-service-1
+                host: solr-query-service
+                port: 8183
+            -
+                id: elastic-query-service-2
+                host: solr-query-service
+                port: 8185
+            -
+                id: elastic-query-service-3
+                host: solr-query-service
+                port: 8186
 
 solr-query-service:
     query:
