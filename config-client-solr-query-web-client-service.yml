@@ -34,11 +34,11 @@ solr-query-web-client-service:
             -
                 id: solr-query-service-2
                 host: solr-query-service-2
-                port: 8185
+                port: 8183
             -
                 id: solr-query-service-3
                 host: solr-query-service-3
-                port: 8186
+                port: 8183
 
 solr-query-service:
     query:
