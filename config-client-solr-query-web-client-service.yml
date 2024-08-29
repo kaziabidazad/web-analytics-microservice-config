@@ -17,7 +17,7 @@ solr-query-web-client-service:
         connect-timeout-ms: 10000
         read-timeout-ms: 10000
         write-timeout-ms: 10000
-        max-in-memory-size: -1
+        max-in-memory-size: 104857600 #100MB
         content-type: 'application/json'
         accept-type: 'application/json'
         solr-query-service-base-url: 'http://solr-query-service:8183/solr-query-service/docs'
