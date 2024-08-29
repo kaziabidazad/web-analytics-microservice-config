@@ -6,7 +6,7 @@ spring:
     cloud:
         loadbalancer:
             retry:
-                avoidPreviousInstance: false
+                avoidPreviousInstance: false #https://github.com/spring-cloud/spring-cloud-commons/issues/1221
                 
     thymeleaf:
         cache: false
