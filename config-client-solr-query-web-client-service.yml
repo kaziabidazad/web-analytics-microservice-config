@@ -3,6 +3,11 @@ server:
     servlet:
         context-path: /solr-web-client
 spring:
+    cloud:
+        loadbalancer:
+            retry:
+                avoidPreviousInstance: false
+                
     thymeleaf:
         cache: false
     security:
@@ -10,7 +15,6 @@ spring:
             name: wams-user
             password: admin
             roles: USER
-
 
 solr-query-web-client-service:
     webclient:
